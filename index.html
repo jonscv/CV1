@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Tooting Gourmet Kitchen | Chef Jon</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--mobile
+      devices will be rendered on desktops because of this-->
+    </head>
+  <body>
+      <header>
+        <a href="index.html" id="logo">
+          <h1>Tooting Gourmet Kitchen</h1>
+          <h2>Chef Jon</h2>
+        </a>
+<!--id refers to a made up reference name (logo) that
+  refers to css (logo) this allows unique structure and presentation-->
+<!--
+HTML Elements*/
+<a> - The anchor element allows for two HTML pages to be linked together.
+<nav> - The navigation element is a semantic element that wraps any type of
+  site navigation.
+<ul> - The unordered list element contains list item elemes and is typically
+   styled with bullet points by default.
+<li> - The list item element makes it possible to format text in a list form.
+  Each list item element should go inside of an ordered or unordered list element.
+-->
+
+<!--Create a navigation element with an unordered list element after the link inside
+ the header. Don’t add any list items or links just yet.-->
+<nav>
+<ul>
+<!--in CSS this will read as nav a.selected { color: #32673f;} -->
+  <li><a href="index.html" class="selected">Portfolio</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+  <div id="wrapper">
+      <section>
+
+  <!--STRUCTURE the IMAGE GALLERY
+  level 1: ul, level 2: li, level 3:anchor link, level 4: stuff inside the anchor like
+  .jpg, paragraphs, level 5: closing tags e.g. /a, /li, /p-->
+
+
+
+
+        <ul id="gallery">
+          <li><a href="charsiupow.jpg">
+            <img src="img/charsiupow.jpg" alt"">
+            <p>Chinese Buns</p>
+          </a>
+        </li>
+
+        <ul id>
+          <li><a href="dalpuri.jpg">
+            <img src="img/dalpuri.jpg" alt"">
+            <p>Mauritian Pancakes</p>
+          </a>
+        </li>
+
+        <ul>
+          <li><a href="joy.jpg">
+            <img src="img/joy.jpg" alt"">
+            <p>Copenhagen veggie food</p>
+          </a>
+        </li>
+
+          <li><a href="happy.jpg">
+              <img src="img/happy.jpg" alt"slacking">
+              <p>slacklining</p>
+            </a>
+          </li>
+
+          <li><a href="fun.jpg">
+              <img src="img/fun.jpg" alt"me">
+              <p>gazing off into the blue expamse of sea</p>
+            </a>
+        </ul>
+
+
+          Gallery will go here.</p>
+      </section>
+
+    <footer>
+      <a href="http://twitter.com/masterkilla"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="http://facebook.com/jonathan ah"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      <p>&copy; 2016 Tooting Gourmet</p>
+    </footer>
+      </div>
+  </body>
+</html>
+
+<!-- NOTES
+
+-classes such as 'id="logo"' can only uniquely occur once on a page. a class can occur m
+multipe times.-->

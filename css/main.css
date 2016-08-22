@@ -1,0 +1,254 @@
+/*NOTES
+-3 main sections: #logo #wrapper #footer #section
+-responsive design: mobile first approach(fluid design)
+  -img {max-width:100%;}
+
+TESTING:
+http://blog.teamtreehouse.com/3-simple-design-tests-to-improve-your-aesthetics
+
+
+
+
+*/
+
+/************************************
+GENERAL
+
+
+cmd+/ = blocks out a line or paragraph for testing purposes.
+************************************/
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0px auto; /*  #<!-- the margin is the remaining pixels eitherside of 940px.used
+      #to keep image consistent across screen sizes-->*/
+    padding: 0 5%;
+  }
+
+  a {
+    text-decoration:none;
+  }
+/*mobile first responsive web design - a compilation of 3 techniques
+-fluid grid eg.img 100% below...do not use pixels fixed units
+-media queries
+*/
+  img {
+    max-width: 100%;
+  }
+/*ensures about is not pushed out the way*/
+  h3 {
+    margin: 0 0 1em 0;
+  }
+
+
+/************************************
+HEADING
+************************************/
+
+  header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #logo {
+
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Changa One', sans-serif;
+    margin: 1px 0;
+    font-size: 1.75em;
+    font-weight: normal;
+    line-height: 0.8em;
+
+  }
+
+  h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0; /*This shrinks the top margin to -5 (tighter), and 0 left right and
+    bottom*/
+    font-weight: normal;
+  }
+
+/*Nav Background on mobile devices */
+/*Logo Text*/
+/*Links*/
+/*Selected nav link*/
+/*Logo Text*/
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;/*inline block sets a default width and height displayed
+  in a row one after the next*/
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;/*Allows nav elements to be more tablet touch friendly due
+  to spacing out the list items. Without it the inline block appears cramped*/
+}
+
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+/*icons are reduced in size while maintaining quality)*/
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #a4a3a3;
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;/* use padding rather than margin to keep text aligned. margin will
+  shift text outside of cell whereas padding will keep it within the cell.*/
+  font-size: 0.75em;
+  color: #bdc3c7
+}
+
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  display: block; /*better to display block than set margin for more flexibility
+  when optimizing for desktop*/
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  .contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+  }
+
+  .contact-info li.phone a {
+    background-image: url('../img/phone.png');
+    color: #bdc3c7;
+  }
+
+  .contact-info li.mail a {
+    background-image: url('../img/mail.png');
+    color: #bdc3c7;
+  }
+
+  .contact-info li.twitter a {
+    background-image: url('../img/twitter.png');
+    color: #bdc3c7;
+  }
+
+
+
+/************************************
+COLORS
+************************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links */
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}

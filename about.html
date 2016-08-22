@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tooting Gourmet Kitchen | Chef Jon</title>
+      <link rel="stylesheet" href="css/normalize.css"><!--sets up foundation and compatibility across browsers-->
+      <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--mobile
+      devices will be rendered on desktops because of this-->
+  </head>
+  <body>
+
+
+    <header>
+<a href="index.html" id="logo"> <!--id refers to a made up reference name (logo) that
+  refers to css (logo) this allows unique structure and presentation-->
+
+  <h1>Tooting Gourmet Kitchen</h1>
+  <h2>Chef Jon</h2>
+</a>
+<!--
+HTML Elements*/
+<a> - The anchor element allows for two HTML pages to be linked together.
+<nav> - The navigation element is a semantic element that wraps any type of
+  site navigation.
+<ul> - The unordered list element contains list item elemes and is typically
+   styled with bullet points by default.
+<li> - The list item element makes it possible to format text in a list form.
+  Each list item element should go inside of an ordered or unordered list element.
+-->
+
+<!--Create a navigation element with an unordered list element after the link inside
+ the header. Don’t add any list items or links just yet.-->
+<nav>
+<ul>
+  <li><a href="index.html">Portfolio</a></li> <!--in CSS this will read
+  as nav a.selected { color: #32673f;} -->
+  <li><a href="about.html" class="selected">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+  <div id="wrapper">
+      <section>
+
+          <img src="img/chefdad.jpg" alt="Photograph of Nick Pettit" class="profile-photo">
+
+        <h3>About</h3>
+        <p>Hi, as a family chef of 50 years, I've drawn on many influences
+          including my Mauritian and Chinese heritage, love for indian and spanish
+          food, and a natural push to refine and perfect my dishes.  It's been
+          a long and arduous journey of learning, experimentation and refinement
+          , to now bring you quality food that will simply blow your taste buds
+          away. </p>
+
+          <p> I'm now in a position to share all this with those closest
+          to me - "My neighbours and fellow residents of Sellincourt
+          Road, I welcome you to the Tooting Gourmet Kitchen"</p>
+
+          <p>If you'd like to follow me on Twitter, my username is
+          <a href="http://twitter.com/masterkilla" >masterkilla</a>.</p>
+
+        <img src="chefmum.jpg" alt="Michele the Chef">
+
+      </section>
+
+    <footer>
+      <a href="http://twitter.com/masterkilla"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="http://facebook.com/jonathan ah"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      <p>&copy; 2016 Tooting Gourmet</p>
+    </footer>
+      </div>
+  </body>
+</html>
+
+<!-- NOTES
+
+-classes such as 'id="logo"' can only uniquely occur once on a page. a class can occur m
+multipe times.-->
